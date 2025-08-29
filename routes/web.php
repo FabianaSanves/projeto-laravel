@@ -8,3 +8,8 @@ Route::get('/', function () {
 });
 
 Route::get('/', [TaskController::class, 'index']);
+Route::post('/tasks', [TaskController::class, 'store']);
+
+Route::post('/tasks/{task}/toggle', [TaskController::class, 'toggle'])->name('tasks.toggle');
+
+Route::delete('/tasks/{task}', [TaskController::class, 'destroy'])->name('tasks.destroy');
