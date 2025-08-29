@@ -19,7 +19,7 @@
     <form action="/tasks" method="POST">
         @csrf
         <input type="text" name="title" placeholder="Nova tarefa...">
-        <button type="submit">Adicionar</button>
+        <button type="submit">Adicionar tarefa</button>
     </form>
     <ul>
         @foreach ($tasks as $task)
@@ -27,12 +27,12 @@
             {{ $task->title }}
             <form action="/tasks/{{ $task->id }}/toggle" method="POST" style="display:inline;">
                 @csrf
-                <button type="submit">Concluir</button>
+                <button type="submit">Tarefa concluída</button>
             </form>
             <form action="/tasks/{{ $task->id }}" method="POST" style="display:inline;">
                 @csrf
                 @method('DELETE')
-                <button type="submit">Excluir</button>
+                <button type="submit">Excluir tarefa </button>
             </form>
         </li>
         @endforeach
