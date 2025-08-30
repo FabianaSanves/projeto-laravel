@@ -5,22 +5,23 @@ html, body {
 }
 
 body {
-    background: linear-gradient(to right, #ece9e6, #ffffff);
+    background: linear-gradient(to right, #9db6d0, #ffffff);
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .card {
+    font-family: "Saira", sans-serif;
     border-radius: 0.75rem;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
-    background-color: #ffffff;
+    border: 1px solid rgba(3, 1, 1, 0.05);
+    box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.05);
+    background-color: #e9ecf6;
 }
 
 .card-title {
+    font-family: 'Libertinus Keyboard', serif;
     font-size: 2rem;
     font-weight: 600;
     color: #343a40;
@@ -28,7 +29,7 @@ body {
 
 .form-control {
     border-radius: 0.5rem;
-    border-color: #ced4da;
+    border-color: #97a2ad;
 }
 .form-control:focus {
     border-color: #80bdff;
@@ -96,5 +97,5 @@ body {
 
 .completed {
     text-decoration: line-through;
-    color: #868e96;
+    color: #4f8b78;
 }
